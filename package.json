@@ -1,17 +1,21 @@
 {
-  "name":  "media-player",
-  "version":  "1.0.0",
-  "description":  "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
-  "license":  "MIT",
-  "author":  "Leonardo Guilarte Carreno <leomiguel1907@gmail.com>",
-  "keywords":  [
-   "platzi",
+  "name": "media-player",
+  "version": "1.0.0",
+  "description": "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
+  "license": "MIT",
+  "author": "Leonardo Guilarte Carreno <leomiguel1907@gmail.com>",
+  "keywords": [
+    "platzi",
     "javascript"
-   ],
-  "scripts":  {
-   "start":  "live-server"
-   },
-  "devDependencies":  {
-       "live-server":  "^1.2.2"
-     }
-  }
+  ],
+  "scripts": {
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.8.4"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
