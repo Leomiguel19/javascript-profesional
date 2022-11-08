@@ -62,3 +62,35 @@ function add(a: number, b: number): number {
   
   const richard = fullName('Agente');
   console.log(richard);
+
+
+// Interfaces
+enum Color {
+    Violeta = 'Violeta',
+    Gris = 'Gris',
+  }
+  
+  interface Rectangulo {
+    ancho: number;
+    alto: number;
+    color?: Color;
+  }
+  
+  let rect: Rectangulo = {
+    ancho: 4,
+    alto: 6,
+    // color: Color.Violeta,
+  };
+  
+  function area(r: Rectangulo): number {
+    return r.alto * r.ancho;
+  }
+  
+  const areaRect = area(rect);
+  console.log(areaRect);
+  
+  rect.toString = function() {
+    return this.color ? `Un rectangulo ${this.color}` : `Un rectangulo`;
+  };
+  
+  console.log(rect.toString());
